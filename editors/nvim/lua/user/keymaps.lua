@@ -67,4 +67,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
+keymap("n", "s", "<cmd>Pounce<CR>", opts)
+keymap("n", "S", "<cmd>PounceRepeat<CR>", opts)
+keymap("v", "s", "<cmd>Pounce<CR>", opts)
+-- omap gs <cmd>Pounce<CR>  " 's' is used by vim-surround

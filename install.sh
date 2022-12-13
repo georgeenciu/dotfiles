@@ -32,6 +32,7 @@ source './utilities/tree/tree.sh'
 source './utilities/eslint/eslint.sh'
 source './utilities/kcolorchooser/kcolorchooser.sh'
 source './utilities/prettier/prettier.sh'
+source './utilities/anydesk/anydesk.sh'
 
 install_build_tools
 configure_ssh
@@ -49,6 +50,7 @@ install_fzf
 install_tree
 configure_eslint
 install_kcolorchooser
+install_anydesk
 echo ""
 
 

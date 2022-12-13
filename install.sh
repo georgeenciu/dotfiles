@@ -33,6 +33,7 @@ source './utilities/eslint/eslint.sh'
 source './utilities/kcolorchooser/kcolorchooser.sh'
 source './utilities/prettier/prettier.sh'
 source './utilities/anydesk/anydesk.sh'
+source './utilities/forticlient/forticlient.sh'
 
 install_build_tools
 configure_ssh
@@ -51,6 +52,7 @@ install_tree
 configure_eslint
 install_kcolorchooser
 install_anydesk
+install_forticlient
 echo ""
 
 

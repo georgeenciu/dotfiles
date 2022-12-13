@@ -27,29 +27,5 @@ configure_nvim() {
   python3 -m pip install --user --upgrade pynvim
 }
 
-install_lua_language_server() {
-  LANGUAGE_SERVER_DIR=~/lua-language-server
-  if [[ ! -d "$LANGUAGE_SERVER_DIR" ]]; then
-    echo_item "installing lua language server" "green"
-		sudo apt -qq --yes install ninja-build libreadline-dev
-    cd
-    git clone https://github.com/sumneko/lua-language-server
-    cd lua-language-server
-    
-    git submodule update --init --recursive
-		cd 3rd/luamake
-    ./compile/install.sh
-    cd ../..
-    ./3rd/luamake/luamake rebuild
-    cd
-    # Install lua formatter
-		git clone --recurse-submodules https://github.com/Koihik/LuaFormatter.git
-    cd LuaFormatter
-    cmake .
-    make
-    make install
-    cd ~/dotfiles
-  else
-    echo_item "lua language server is already installed" "green"
-  fi
-}
+source './php_actor.sh'
+install_phpactor

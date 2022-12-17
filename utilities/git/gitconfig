@@ -10,6 +10,12 @@
 [includeif "gitdir:~/code/georgeenciu/"]
 	path = ~/code/georgeenciu/.gitconfig
 
+[includeif "gitdir:~/code/nch/"]
+	path = ~/code/nch/.gitconfig
+
+[includeif "gitdir:~/code/itworks/"]
+	path = ~/code/itworks/.gitconfig
+
 [log]
 	showSignature = false
 
@@ -48,5 +54,6 @@
 
 [gpg]
 	program = gpg
+
 [init]
 	defaultBranch = master

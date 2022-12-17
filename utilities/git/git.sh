@@ -18,4 +18,6 @@ configure_git() {
 
   echo_item "symlinking georgeenciu@gh gitconfig" "green"
   ln -sf ~/code/georgeenciu/dotfiles/utilities/git/gitconfig_gh ~/code/georgeenciu/.gitconfig
+  ln -sf ~/code/georgeenciu/dotfiles/utilities/git/gitconfig_nch ~/code/nch/.gitconfig
+  ln -sf ~/code/georgeenciu/dotfiles/utilities/git/gitconfig_nch ~/code/itworks/.gitconfig
 }

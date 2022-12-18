@@ -38,6 +38,7 @@ source './utilities/forticlient/forticlient.sh'
 install_build_tools
 configure_ssh
 configure_git
+install_diff_so_fancy
 configure_gpg
 install_direnv
 install_http_utils

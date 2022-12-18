@@ -2,10 +2,20 @@
 
 install_git() {
   if exists "git"; then
-    return 0
+    echo_item "git is already installed" "green"
   else
     echo_item "installing git" "green"
     sudo apt -qq --yes install git
+  fi
+}
+
+
+install_diff_so_fancy() {
+  if exists "diff-so-fancy"; then
+    echo_item "diff-so-fancy is already installed" "green"
+  else
+    echo_item "installing diff-so-fancy" "green"
+    npm install -g diff-so-fancy
   fi
 }
 

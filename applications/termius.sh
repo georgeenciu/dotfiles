@@ -5,6 +5,8 @@ install_termius() {
     echo_item "termius is already installed" "green"
   else
     echo_item "installing termius" "green"
-    sudo snap install termius-app
+    wget -O termius.deb https://www.termius.com/download/linux/Termius.deb
+    sudo apt install -qq --yes ./termius.deb
+    rm -f termius.deb
   fi
 }

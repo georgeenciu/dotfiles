@@ -121,6 +121,7 @@ source './applications/edge.sh'
 source './applications/chrome.sh'
 source './applications/notion.sh'
 source './applications/dbeaver.sh'
+source './applications/proton.sh'
 
 install_docker
 install_virtualbox
@@ -138,6 +139,7 @@ install_edge
 install_chrome
 install_notion
 install_dbeaver
+install_proton
 echo ""
 
 # - CLOUD PROVIDERS -----------------------------------------------------------

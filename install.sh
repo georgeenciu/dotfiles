@@ -140,7 +140,11 @@ install_notion
 install_dbeaver
 echo ""
 
+# - CLOUD PROVIDERS -----------------------------------------------------------
 
+echo_header "Cloud Providers"
+source './cloud/google.sh'
+install_gcloud
 
 # - HARDWARE ------------------------------------------------------------------
 echo_header "Hardware"

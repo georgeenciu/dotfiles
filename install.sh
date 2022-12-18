@@ -117,6 +117,7 @@ source './applications/bazecor.sh'
 source './applications/mysql-workbench.sh'
 source './applications/termius.sh'
 source './applications/edge.sh'
+source './applications/chrome.sh'
 
 install_docker
 install_virtualbox
@@ -131,6 +132,7 @@ install_bazecor
 install_mysql_workbench
 install_termius
 install_edge
+install_chrome
 echo ""
 
 

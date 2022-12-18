@@ -1,7 +1,7 @@
 #!/bin/bash
 
 install_edge() {
-  if exists "msedge"; then 
+  if exists "microsoft-edge"; then 
     echo_item "edge is already installed" "green"
   else
     echo_item "installing edge" "green"

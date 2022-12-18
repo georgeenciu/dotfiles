@@ -145,8 +145,10 @@ echo ""
 echo_header "Cloud Providers"
 source './cloud/google.sh'
 source './cloud/azure.sh'
+source './cloud/aws.sh'
 install_gcloud
 install_azure
+install_aws
 
 # - HARDWARE ------------------------------------------------------------------
 echo_header "Hardware"

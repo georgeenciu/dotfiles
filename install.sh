@@ -118,6 +118,7 @@ source './applications/mysql-workbench.sh'
 source './applications/termius.sh'
 source './applications/edge.sh'
 source './applications/chrome.sh'
+source './applications/notion.sh'
 
 install_docker
 install_virtualbox
@@ -133,6 +134,7 @@ install_mysql_workbench
 install_termius
 install_edge
 install_chrome
+install_notion
 echo ""
 
 

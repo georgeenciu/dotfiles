@@ -122,6 +122,7 @@ source './applications/chrome.sh'
 source './applications/notion.sh'
 source './applications/dbeaver.sh'
 source './applications/proton.sh'
+source './applications/spotify.sh'
 
 install_docker
 install_virtualbox
@@ -140,6 +141,7 @@ install_chrome
 install_notion
 install_dbeaver
 install_proton
+install_spotify
 echo ""
 
 # - CLOUD PROVIDERS -----------------------------------------------------------

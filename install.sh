@@ -123,6 +123,7 @@ source './applications/notion.sh'
 source './applications/dbeaver.sh'
 source './applications/proton.sh'
 source './applications/spotify.sh'
+source './applications/postman.sh'
 
 install_docker
 install_virtualbox
@@ -142,6 +143,7 @@ install_notion
 install_dbeaver
 install_proton
 install_spotify
+install_postman
 echo ""
 
 # - CLOUD PROVIDERS -----------------------------------------------------------

@@ -85,19 +85,12 @@ return packer.startup(function(use)
 	use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }
 
 	-- Treesitter
-	use {
-		"nvim-treesitter/nvim-treesitter",
-		commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
- }
+	use { "nvim-treesitter/nvim-treesitter", commit="8e763332b7bf7b3a426fd8707b7f5aa85823a5ac"}
 
   use {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v2.x",
-    requires = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", 
-      "MunifTanjim/nui.nvim", 
-    }
+    requires = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", "MunifTanjim/nui.nvim" }
   }
 
 	-- Git
@@ -105,6 +98,12 @@ return packer.startup(function(use)
 
   use { "kylechui/nvim-surround" }
   use { "rlane/pounce.nvim"}
+  use { "terrortylor/nvim-comment"}
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
+  -- use { 'junegunn/fzf.vim', setup = [[require('plugin.fzf')]], requires = { 'junegunn/fzf' }, event = 'BufRead' }
+  --
+  -- use { 'chengzeyi/fzf-preview.vim', after = 'fzf.vim', requires = { 'ryanoasis/vim-devicons' } }
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

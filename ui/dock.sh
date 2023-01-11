@@ -12,5 +12,5 @@ configure_dock() {
   gsettings set org.gnome.shell.extensions.dash-to-dock intellihide true
 
   # SET APPLICATIONS IN DOCK
-  gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'discord_discord.desktop', 'slack_slack.desktop']"
+  gsettings set org.gnome.shell favorite-apps "['kitty.desktop', 'firefox_firefox.desktop', 'notion-snap_notion-snap.desktop', 'discord_discord.desktop', 'slack_slack.desktop', 'signal-desktop.desktop', 'spotify.desktop']"
 }

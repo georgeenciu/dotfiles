@@ -20,6 +20,11 @@ install_diff_so_fancy() {
 }
 
 configure_git() {
+  echo_item "create code folders" "green"
+  mkdir -p ~/code/georgeenciu/ 
+  mkdir -p ~/code/nch/ 
+  mkdir -p ~/code/itworks/ 
+
   echo_item "symlinking global gitignore" "green"
   ln -sf ~/code/georgeenciu/dotfiles/utilities/git/gitignore_global ~/.gitignore_global
 

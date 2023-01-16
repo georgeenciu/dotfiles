@@ -119,6 +119,7 @@ source './applications/mysql-workbench.sh'
 source './applications/termius.sh'
 source './applications/edge.sh'
 source './applications/chrome.sh'
+source './applications/brave.sh'
 source './applications/notion.sh'
 source './applications/dbeaver.sh'
 source './applications/proton.sh'
@@ -139,6 +140,7 @@ install_mysql_workbench
 install_termius
 install_edge
 install_chrome
+install_brave
 install_notion
 install_dbeaver
 install_proton

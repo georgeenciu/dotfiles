@@ -98,7 +98,7 @@ source './editors/nvim/nvim.sh'
 
 install_nvim
 configure_nvim
-install_lua_language_server
+# install_lua_language_server
 echo ""
 
 

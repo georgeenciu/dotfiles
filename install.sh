@@ -106,7 +106,7 @@ echo ""
 # - APPLICATIONS --------------------------------------------------------------
 echo_header "Applications"
 source './applications/docker.sh'
-source './applications/virtualbox.sh'
+# source './applications/virtualbox.sh'
 source './applications/vlc.sh'
 source './applications/slack.sh'
 source './applications/discord.sh'
@@ -126,7 +126,7 @@ source './applications/spotify.sh'
 source './applications/postman.sh'
 
 install_docker
-install_virtualbox
+# install_virtualbox
 install_vlc
 install_slack
 install_discord

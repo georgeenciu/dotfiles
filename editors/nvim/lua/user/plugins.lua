@@ -100,6 +100,7 @@ return packer.startup(function(use)
   use { "rlane/pounce.nvim"}
   use { "terrortylor/nvim-comment"}
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { 'DaikyXendo/nvim-material-icon', commit = "602088c2682e61cbebd7191de7dc88bfa90c6890"}
 
   -- use { 'junegunn/fzf.vim', setup = [[require('plugin.fzf')]], requires = { 'junegunn/fzf' }, event = 'BufRead' }
   --

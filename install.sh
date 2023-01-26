@@ -204,7 +204,7 @@ source './cleanup.sh'
 uninstall_unwanted_software
 echo ""
 
-sudo apt autoremove
+sudo apt -qq --yes autoremove
 
 echo "Installation completed successfully."
 echo "Some of the changes might require a reboot, want to do that now? [Y/n]"

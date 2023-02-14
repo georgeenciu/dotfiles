@@ -17,15 +17,6 @@ configure_nvim() {
   rm -rf ~/.config/nvim
   ln -sfn ~/code/georgeenciu/dotfiles/editors/nvim ~/.config/nvim
 
-  echo_item "installing nvim plugins" "green"
-  nvim "+PackerInstall" +qall
-
-  echo_item "updating nvim plugins" "green"
-  nvim "+PackerUpdate" +qall
-
 	echo_item "installing required python packages"
   python3 -m pip install --user --upgrade pynvim
 }
-
-source './php_actor.sh'
-install_phpactor

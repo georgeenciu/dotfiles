@@ -53,7 +53,7 @@ install_tree
 configure_eslint
 install_kcolorchooser
 install_anydesk
-install_forticlient
+# install_forticlient
 echo ""
 
 
@@ -156,6 +156,7 @@ source './cloud/azure.sh'
 source './cloud/aws.sh'
 install_gcloud
 install_azure
+install_func
 install_aws
 
 # - HARDWARE ------------------------------------------------------------------

@@ -20,5 +20,7 @@ install_docker() {
     echo_item "installing Docker-compose" "green"
     sudo curl -L --silent https://github.com/docker/compose/releases/download/1.27.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
+
+    git clone git@github.com:MartinRamm/fzf-docker.git ~/.fzf-docker
   fi
 }

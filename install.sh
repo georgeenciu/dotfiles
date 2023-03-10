@@ -9,7 +9,11 @@ echo ""
 echo_header "Starting installation and configuration"
 
 sudo -v # Ask for sudo password & keep alive
-while true; do sudo n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+while true; do
+	sudo n true
+	sleep 60
+	kill -0 "$$" || exit
+done 2>/dev/null &
 
 sudo apt -qq --yes update
 echo ""
@@ -34,6 +38,7 @@ source './utilities/kcolorchooser/kcolorchooser.sh'
 source './utilities/prettier/prettier.sh'
 source './utilities/anydesk/anydesk.sh'
 source './utilities/forticlient/forticlient.sh'
+source './utilities/lazygit/lazygit.sh'
 
 install_build_tools
 configure_ssh
@@ -53,10 +58,9 @@ install_tree
 configure_eslint
 install_kcolorchooser
 install_anydesk
+install_lazygit
 # install_forticlient
 echo ""
-
-
 
 # - PROGRAMMING LANGUAGES -----------------------------------------------------
 echo_header "Programming languages"
@@ -72,7 +76,6 @@ install_rust
 install_terraform
 install_golang
 echo ""
-
 
 # - TERMINAL ------------------------------------------------------------------
 echo_header "Terminal"
@@ -90,8 +93,6 @@ configure_tmux
 install_starship
 echo ""
 
-
-
 # - EDITORS -------------------------------------------------------------------
 echo_header "Editors"
 source './editors/nvim/nvim.sh'
@@ -100,8 +101,6 @@ install_nvim
 configure_nvim
 # install_lua_language_server
 echo ""
-
-
 
 # - APPLICATIONS --------------------------------------------------------------
 echo_header "Applications"
@@ -170,8 +169,6 @@ configure_touchpad
 configure_usb
 echo ""
 
-
-
 # - UI ------------------------------------------------------------------------
 echo_header "UI"
 source './ui/fonts.sh'
@@ -188,8 +185,6 @@ configure_theme
 install_icons
 configure_icons
 echo ""
-
-
 
 # - SCRIPTS -------------------------------------------------------------------
 echo_header "Scripts"
@@ -211,6 +206,5 @@ echo "Installation completed successfully."
 echo "Some of the changes might require a reboot, want to do that now? [Y/n]"
 read -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
-  sudo shutdown -r
+	sudo shutdown -r
 fi
-

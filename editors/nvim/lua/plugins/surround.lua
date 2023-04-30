@@ -1,5 +1,6 @@
 return {
   "echasnovski/mini.surround",
+  enabled = false,
   opts = {
     -- use gz mappings instead of s to prevent conflict with leap
     mappings = {
@@ -11,5 +12,13 @@ return {
       replace = "gzr", -- Replace surrounding
       update_n_lines = "gzn", -- Update `n_lines`
     },
+  },
+  {
+    "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup({})
+    end,
   },
 }

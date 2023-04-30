@@ -53,6 +53,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.phpenv/bin:$PATH"
 
 # Aws region
 export AWS_REGION=eu-west-1
@@ -117,6 +118,9 @@ eval "$(starship init zsh)"
 
 # direnv needs to be hooked into the shell to work properly
 eval "$(direnv hook $SHELL)"
+
+# enable phpenv completion
+eval "$(phpenv init -)"
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

@@ -3,8 +3,8 @@
 configure_dock() {
 	echo_item "configuring the dock" "green"
 	# MOVE TO BOTTOM AND DONT BE MAX WIDTH
-	gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
-	gsettings set org.gnome.shell.extensions.dash-to-dock dock-position LEFT
+	gsettings set org.gnome.shell.extensions.dash-to-dock extend-height true
+	gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 
 	# AUTO HIDE DOCK
 	gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false

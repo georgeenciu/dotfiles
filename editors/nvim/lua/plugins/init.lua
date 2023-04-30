@@ -38,4 +38,13 @@ return {
   {
     "nvim-tree/nvim-web-devicons",
   },
+  {
+    "Equilibris/nx.nvim",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+      config = function()
+        require("nx").setup({})
+      end,
+    },
+  },
 }

@@ -176,6 +176,7 @@ source './ui/gnome_tweaks.sh'
 source './ui/dock.sh'
 source './ui/theme.sh'
 source './ui/icons.sh'
+source './ui/desktop.sh'
 
 install_fonts
 install_gnome_tweaks
@@ -184,6 +185,7 @@ install_theme
 configure_theme
 install_icons
 configure_icons
+configure_desktop
 echo ""
 
 # - SCRIPTS -------------------------------------------------------------------

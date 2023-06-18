@@ -55,6 +55,10 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.phpenv/bin:$PATH"
 
+export ANDROID_HOME=~/Android/Sdk/
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # Aws region
 export AWS_REGION=eu-west-1
 export AWS_DEFAULT_REGION=eu-west-1
@@ -74,6 +78,7 @@ alias tree="/usr/local/bin/tree -I node_modules"
 alias spotify=spt
 alias vv="nvim ."
 alias ll="ls -al"
+alias python=python3
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.fzf-docker/docker-fzf ] && source ~/.fzf-docker/docker-fzf

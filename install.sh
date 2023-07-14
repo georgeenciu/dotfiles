@@ -196,6 +196,7 @@ source './cron/cron.sh'
 touch ~/.gitautosync
 
 install_scripts
+sync_crons
 echo ""
 
 # -- CLEANUP -------------------------------------------------------------------

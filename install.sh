@@ -192,6 +192,8 @@ echo ""
 echo_header "Scripts"
 source './scripts/scripts.sh'
 
+touch ~/.gitautosync
+
 install_scripts
 echo ""
 

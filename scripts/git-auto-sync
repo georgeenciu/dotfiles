@@ -3,7 +3,7 @@
 current_date_time=$(date +'%Y-%m-%d %H:%M:%S')
 local_machine_name=$(hostname)
 
-csv_file="~/.git-auto-sync"
+csv_file="/home/george/.gitautosync"
 
 while IFS=, read -r path label; do
 	cd "$path"
@@ -15,7 +15,7 @@ while IFS=, read -r path label; do
 		notify-send -i face-smile "Git Sync OK" "Sucessfully pushed $label"
 	else
 		if ! git pull --rebase; then
-			notify-send -i face-sad "Git Sync Conflict" "There was a conflict when pulling changes for $label"
+			notify-send -i face-sad "Git Sync CONFLICT" "There was a conflict when pulling changes for $label"
 		else
 			notify-send -i face-smile "Git Sync OK" "Sucessfully pulled $label"
 		fi

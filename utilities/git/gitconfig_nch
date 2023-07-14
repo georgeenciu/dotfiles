@@ -1,8 +1,0 @@
-[user]
-  email = george.enciu@nchcapital.ro
-  name = George Enciu
-  editor = nvim
-  signkey = 23C9E652415B1820
-
-[url "git@repos.nchadvisors.ro"]
-  insteadOf = git@github.com

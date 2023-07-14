@@ -4,5 +4,6 @@ Port 22
 User pair
 IdentityFile ~/.ssh/private_rsa
 StrictHostKeyChecking no
+
 Host *
 	IdentityAgent ~/.1password/agent.sock

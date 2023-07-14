@@ -14,9 +14,6 @@
 [includeif "gitdir:~/code/georgeenciu/dotfiles/"]
 	path = ~/code/georgeenciu/.gitconfig
 
-[includeif "gitdir:~/code/nch/"]
-	path = ~/code/nch/.gitconfig
-
 [includeif "gitdir:~/code/itworks/"]
 	path = ~/code/itworks/.gitconfig
 

@@ -10,15 +10,36 @@ return {
     },
   },
   {
-    "navarasu/onedark.nvim",
+    "AlexvZyl/nordic.nvim",
+    lazy = false,
+    priority = 1000,
     config = function()
-      require("onedark").setup({ style = "warm" })
+      require("nordic").load()
     end,
   },
+  -- {
+  --   "navarasu/onedark.nvim",
+  --   config = function()
+  --     require("onedark").setup({ style = "warm" })
+  --   end,
+  -- },
+  -- {
+  --   "ribru17/bamboo.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     require("bamboo").setup({
+  --       style = "multiplex",
+  --       -- optional configuration here
+  --     })
+  --     require("bamboo").load()
+  --   end,
+  -- },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      -- colorscheme = "onedark",
+      colorscheme = "nordic",
     },
   },
   {

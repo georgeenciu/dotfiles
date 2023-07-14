@@ -191,6 +191,7 @@ echo ""
 # - SCRIPTS -------------------------------------------------------------------
 echo_header "Scripts"
 source './scripts/scripts.sh'
+source './cron/cron.sh'
 
 touch ~/.gitautosync
 

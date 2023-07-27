@@ -15,6 +15,18 @@ return {
     priority = 1000,
     config = function()
       require("nordic").load()
+      require("nordic").setup({
+        override = {
+          CursorLine = {
+            bg = "#000000",
+            bold = false,
+          },
+          Visual = {
+            bg = "#000000",
+            bold = false,
+          },
+        },
+      })
     end,
   },
   -- {

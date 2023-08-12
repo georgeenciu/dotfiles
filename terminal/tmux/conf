@@ -140,8 +140,8 @@ bind-key -T prefix_v G split-window -v -c '#{pane_current_path}'
 # =============================================================================
 
 
-# set -g @plugin 'odedlaz/tmux-onedark-theme'
-set -g @plugin "arcticicestudio/nord-tmux"
+set -g @plugin 'odedlaz/tmux-onedark-theme'
+# set -g @plugin "arcticicestudio/nord-tmux"
 set -g @plugin 'yardnsm/tmux-1password'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)

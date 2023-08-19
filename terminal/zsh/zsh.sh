@@ -30,6 +30,7 @@ install_zsh() {
 		echo_item "installing zsh-syntax-highlighting" "green"
 		git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	fi
+
 }
 
 configure_zsh() {
@@ -38,4 +39,7 @@ configure_zsh() {
 
 	echo_item "Symlinking zshrc" "green"
 	ln -sf ~/code/georgeenciu/dotfiles/terminal/zsh/zshrc ~/.zshrc
+
+	echo_item "Copying zshenv" "green"
+	cp ~/code/georgeenciu/dotfiles/terminal/zsh/.zshenv.dist ~/.zshenv
 }

@@ -79,6 +79,8 @@ alias spotify=spt
 alias vv="nvim ."
 alias ll="ls -al"
 alias python=python3
+alias nmaster="git checkout master && git pull"
+alias rmaster="git checkout master && git pull && git checkout -"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.fzf-docker/docker-fzf ] && source ~/.fzf-docker/docker-fzf

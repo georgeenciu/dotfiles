@@ -37,16 +37,17 @@
 	prune = true
 
 [alias]
-	sla = log --oneline --decorate --graph --all --no-show-signature
-	glog = log -E -i --grep
-	unstage = reset
-	uncommit = reset --soft HEAD^
-	mup = !git checkout master && git pull && git checkout -
-	upstream = rev-parse --abbrev-ref --symbolic-full-name @{u}
-	ureset = !git upstream && git reset --hard $(git upstream)
-	set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
-	udiff = !git diff origin/`git symbolic-ref --short HEAD`
+  sla = log --oneline --decorate --graph --all --no-show-signature
+  glog = log -E -i --grep
+  unstage = reset
+  uncommit = reset --soft HEAD^
+  mup = !git checkout master && git pull && git checkout -
+  upstream = rev-parse --abbrev-ref --symbolic-full-name @{u}
+  ureset = !git upstream && git reset --hard $(git upstream)
+  set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+  udiff = !git diff origin/`git symbolic-ref --short HEAD`
   gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; }; f"
+  newbranch = "!f() { git stash; git checkout master; git pull; git checkout -b $1; git stash pop; }; f"
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f

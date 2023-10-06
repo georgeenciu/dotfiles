@@ -39,6 +39,7 @@ source './utilities/prettier/prettier.sh'
 source './utilities/anydesk/anydesk.sh'
 source './utilities/forticlient/forticlient.sh'
 source './utilities/lazygit/lazygit.sh'
+source './utilities/obisdian/obisdian.sh'
 
 install_build_tools
 configure_ssh
@@ -59,6 +60,7 @@ configure_eslint
 install_kcolorchooser
 install_anydesk
 install_lazygit
+install_obsidian
 # install_forticlient
 echo ""
 

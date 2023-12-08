@@ -82,6 +82,10 @@ alias python=python3
 alias nmaster="git checkout master && git pull"
 alias rmaster="git checkout master && git pull && git checkout -"
 
+alias tfi="terraform init"
+alias tfa="terraform apply"
+alias tfp="terraform plan"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.fzf-docker/docker-fzf ] && source ~/.fzf-docker/docker-fzf
 
@@ -111,6 +115,24 @@ ensure_tmux_is_running
 # enable zmv
 autoload zmv
 fpath=($fpath "/home/george/.zfunctions")
+
+
+
+function azz() {
+  # Fetch subscription details and format them for display
+    local subscriptions=$(az account list --query "[].{name:name, id:id}" -o tsv)
+
+    # Use fzf to select a subscription and extract the ID
+    local selected_subscription=$(echo "$subscriptions" | fzf --height 20% --reverse | awk '{print $NF}')
+
+    if [ -n "$selected_subscription" ]; then
+        # Set the selected subscription
+        az account set --subscription "$selected_subscription"
+        echo "Switched to subscription: $selected_subscription"
+    else
+        echo "No subscription selected."
+    fi
+}
 
 # zsh functions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
@@ -143,3 +165,8 @@ fi
 source <(ng completion script)
 source ~/.zshenv
 
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+eval "$(pyenv virtualenv-init -)"

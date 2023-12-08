@@ -1,0 +1,25 @@
+#!/bin/bash
+
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+domain=$1
+
+expires_on=$(whois $domain | grep 'Expires On:' | awk '{print $3}')
+
+expires_on_seconds=$(date -d"$expires_on" +%s)
+
+current_seconds=$(date +%s)
+
+diff_seconds=$((expires_on_seconds-current_seconds))
+
+diff_days=$((diff_seconds/(60*60*24)))
+
+if [ $diff_days -gt 30 ]
+then
+  diff_months=$((diff_days/30))
+  echo -e "${GREEN}The domain $domain will expire in $diff_months months.${NC}"
+else
+  echo -e "${YELLOW}The domain $domain will expire in $diff_days days.${NC}"
+fi

@@ -17,6 +17,9 @@
 [includeif "gitdir:~/code/itworks/"]
 	path = ~/code/itworks/.gitconfig
 
+[includeif "gitdir:~/code/fiscal-hub/"]
+	path = ~/code/fiscal-hub/.gitconfig
+
 [includeif "gitdir:~/code/nch/"]
 	path = ~/code/itworks/.gitconfig
 

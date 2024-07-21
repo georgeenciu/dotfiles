@@ -6,4 +6,19 @@ IdentityFile ~/.ssh/private_rsa
 StrictHostKeyChecking no
 
 Host *
-	IdentityAgent ~/.1password/agent.sock
+  IdentityAgent ~/.1password/agent.sock
+
+
+# NIWS AZURE
+Host niwsazure
+    HostName ssh.dev.azure.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_niws.pub
+    IdentitiesOnly yes
+
+# AiMethica Azure
+Host aimethicaazure
+    HostName ssh.dev.azure.com
+    User git
+    IdentityFile ~/.ssh/ai-methica.pub
+    IdentitiesOnly yes

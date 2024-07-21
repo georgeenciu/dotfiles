@@ -65,6 +65,6 @@
 	program = gpg
 
 [init]
-	defaultBranch = master
+  defaultBranch = master
 [interactive]
 	diffFilter = diff-so-fancy --patch
